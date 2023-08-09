@@ -7,13 +7,13 @@
   <title>Todo List</title>
 </head>
 <body class="bg-gray-100">
-  <div class="container mx-auto mt-8 p-4">
-    <h1 class="text-2xl font-semibold mb-4">Todo List</h1>
-    <div class="flex space-x-2">
-      <input id="taskInput" type="text" class="w-full p-2 border rounded-md" placeholder="Enter a new task">
-      <button id="addTaskButton" class="bg-blue-500 text-white px-4 py-2 rounded-md">Add Task</button>
+  <div class="w-full justify-center mt-8 p-4">
+    <h1 class="text-2xl md:text-6xl font-mono font-semibold mb-4 w-full flex md:justify-center">Todo List</h1>
+    <div class="flex justify-center space-x-2 md:space-x-10 w-full">
+      <input id="taskInput" type="text" class="w-full md:text-4xl p-2 md:p-10 border font-mono   rounded-md" placeholder="Enter a new task">
+      <button id="addTaskButton" class="bg-blue-500 md:text-5xl text-white font-semibold font-mono px-4 py-2 rounded-md">Add Task</button>
     </div>
-    <ul id="taskList" class="mt-4"></ul>
+    <ul id="taskList" class="mt-4 md:mt-10"></ul>
   </div>
   <script src="script.js"></script>
 </body>

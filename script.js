@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const taskText = taskInput.value.trim();
       if (taskText !== "") {
         const taskItem = document.createElement("li");
-        taskItem.className = "bg-white p-2 rounded-md mb-2 flex justify-between items-center";
+        taskItem.className = "bg-white p-2 md:p-10 rounded-md mb-2 flex justify-between items-center";
         taskItem.innerHTML = `
-          <span>${taskText}</span>
-          <button class="text-red-500">Delete</button>
+          <span class="md:text-4xl font-mono font-semibold">${taskText}</span>
+          <button class="text-red-500 md:text-5xl font-mono font-semibold">Delete</button>
         `;
         taskList.appendChild(taskItem);
         taskInput.value = "";
