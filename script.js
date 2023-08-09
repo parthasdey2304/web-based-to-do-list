@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const taskItem = document.createElement("li");
         taskItem.className = "bg-white p-2 md:p-10 rounded-md mb-2 flex justify-between items-center";
         taskItem.innerHTML = `
-          <span class="md:text-4xl font-mono font-semibold">${taskText}</span>
+          <span class="md:text-4xl font-mono font-semibold pr-2 md:pr-10">${taskText}</span>
           <button class="text-red-500 md:text-5xl font-mono font-semibold">Delete</button>
         `;
         taskList.appendChild(taskItem);
